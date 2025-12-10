@@ -16,7 +16,7 @@
         let today = new Date();
       
       if (isNaN(userDate)) {
-            alert("Невірний формат дати! Приклад: 2025-12-20");
+            alert("Хибний формат. Приклад: 2025-12-20");
             return;
         }
       let diffMs = userDate - today;
@@ -25,9 +25,11 @@
       if (diffDays > 0) {
     
       alert("До цієї дати залишилося: " + diffDays + " днів.");
-        } else if (diffDays === 0) {
+        } 
+      else if (diffDays === 0) {
             alert("Це сьогодні!");
-        } else {
+        } 
+      else {
             alert("Ця дата вже минула на " + Math.abs(diffDays) + " днів.");
         }
       }
