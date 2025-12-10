@@ -32,12 +32,15 @@
 
         if (i === attempts) {
           alert('На жаль, ви не вгадали. Правильна відповідь: ' + capitalize(chosen));
+          window.location.href = 'https://esport.in.ua';
           return;
         }
 
-        answer = prompt('На жаль, ви не вгадали. Можливо іншого разу вам пощастить. Залишилосьспроб:');
+        answer = prompt('На жаль, ви не вгадали. Можливо іншого разу вам пощастить. Залишилось спроб:');
         if (answer === null) return;
         answer = answer.trim().toLowerCase();
+        window.location.href = 'https://esport.in.ua';
+        return;
       }
 
       function capitalize(s) {
